@@ -26,6 +26,6 @@ export default await Env.create(new URL("../", import.meta.url), {
 	SESSION_DRIVER: Env.schema.enum(["cookie", "memory", "database"] as const),
 
 	// Database
-	LIBSQL_URL: Env.schema.string({ format: "url", tld: false }),
+	LIBSQL_URL: Env.schema.string(),
 	LIBSQL_AUTH_TOKEN: Env.schema.string.optional(),
 });
