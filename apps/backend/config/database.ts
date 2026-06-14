@@ -115,19 +115,19 @@ const dbConfig = defineConfig({
 		 * libSQL (Turso) connection.
 		 * Install package to switch: npm install @libsql/client
 		 */
-		libsql: {
-			client: "libsql",
-			connection: {
-				url: process.env.LIBSQL_URL,
-				authToken: process.env.LIBSQL_AUTH_TOKEN,
-			},
-			useNullAsDefault: true,
-			migrations: {
-				naturalSort: true,
-				paths: ["database/migrations"],
-			},
-			debug: app.inDev,
-		},
+		// libsql: {
+		// 	client: "libsql",
+		// 	connection: {
+		// 		url: process.env.LIBSQL_URL,
+		// 		authToken: process.env.LIBSQL_AUTH_TOKEN,
+		// 	},
+		// 	useNullAsDefault: true,
+		// 	migrations: {
+		// 		naturalSort: true,
+		// 		paths: ["database/migrations"],
+		// 	},
+		// 	debug: app.inDev,
+		// },
 	},
 });
 
