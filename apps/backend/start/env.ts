@@ -15,7 +15,8 @@ export default await Env.create(new URL("../", import.meta.url), {
 	// Node
 	NODE_ENV: Env.schema.enum(["development", "production", "test"] as const),
 	PORT: Env.schema.number(),
-	HOST: Env.schema.string({ format: "host" }),
+	// HOST: Env.schema.string({ format: "host" }),
+	HOST: Env.schema.string.optional(),
 	LOG_LEVEL: Env.schema.string(),
 
 	// App
